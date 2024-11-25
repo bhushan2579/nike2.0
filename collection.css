@@ -1,0 +1,136 @@
+/* styles.css */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #111;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.collection {
+    padding: 20px;
+}
+
+.collection-category {
+    margin-bottom: 40px;
+}
+
+.collection-category h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.collection-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.collection-items .item {
+    width: calc(33% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.collection-items .item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries for Mobile Devices */
+
+/* For devices with a max width of 768px (tablets and below) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .collection-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collection-items .item {
+        width: 80%;  /* Make items wider on smaller screens */
+    }
+
+    footer .social-links {
+        flex-direction: column;
+    }
+
+    footer .social-links a {
+        margin-bottom: 10px;
+    }
+}
+
+/* For devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    header .logo img {
+        max-height: 40px; /* Smaller logo on smaller screens */
+    }
+
+    .collection-category h2 {
+        font-size: 1.5em; /* Smaller headings for mobile */
+    }
+
+    .collection-items .item {
+        width: 100%; /* Make items take full width */
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
