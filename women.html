@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Women's Collection</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+nav {
+    background-color: #222;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #575757;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.product-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+.product-card p {
+    font-size: 1.1em;
+    color: #777;
+}
+.btn-buy {
+    background-color: #111;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.btn-buy:hover {
+    background-color: #575757;
+}
+.footer{
+    height:auto;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-evenly;
+    border-top:1px solid rgba(0, 0, 0, 0.164) ;
+    margin-top: 20px;
+}
+.Resources{
+    font-size: larger;
+}
+.Resources h3{
+    font-size: 50px;
+}
+.Resources h5{
+    font-size: 20px;
+    color: rgba(77, 77, 77, 0.507);
+    margin-bottom: -30px;
+}
+.Help{
+    font-size: larger;
+}
+.Help h3{
+    font-size: 50px;
+}
+.Help h5{
+    font-size: 20px;
+    color: rgba(77, 77, 77, 0.507);
+    margin-bottom: -10px;
+}
+.Help h6{
+    font-size: 18px;
+    color: rgba(77, 77, 77, 0.507);
+    margin-bottom: 0px;
+}
+.Company{
+    font-size: larger;
+}
+.Company h3{
+    font-size: 50px;
+}
+.Company h5{
+    font-size: 20px;
+    color: rgba(77, 77, 77, 0.507);
+    margin-bottom: -20px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: #f1f1f1;
+}
+.add{
+    display: inline;
+    height: auto;
+    width: auto;
+}
+.vtext h2{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.footer .Resources,
+.footer .Help,
+.footer .Company {
+    flex: 1;
+    width: 100%;
+    margin-left:200px ;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer h5 {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #ff5722;
+}
+@media (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .Resources,
+    .footer .Help,
+    .footer .Company {
+        margin-bottom: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Nike - Women's Collection</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="lodingpage.html">Shop</a>
+    <a href="lodingpage.html">Sale</a>
+    <a href="lodingpage.html">New Arrivals</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="content">
+    <div class="product-card">
+        <img src="t-shirt_women.jpg" alt="Nike Women's T-shirt">
+        <h3>Nike Women's Air T-shirt</h3>
+        <p>$35.00</p>
+        <button class="btn-buy">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="runnigshoe_women.jpg" alt="Nike Women's Sneakers">
+        <h3>Nike Women's Running Shoes</h3>
+        <p>$110.00</p>
+        <button class="btn-buy">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="hoddies_women.jpg" alt="Nike Women's Hoodie">
+        <h3>Nike Women's Sports Hoodie</h3>
+        <p>$80.00</p>
+        <button class="btn-buy">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="joggers_women.jpg" alt="Nike Women's Joggers">
+        <h3>Nike Women's Joggers</h3>
+        <p>$65.00</p>
+        <button class="btn-buy">Buy Now</button>
+    </div>
+</section>
+<div class="footer">
+    <div class="Resources">
+        <div><h3>Resources</h3></div>
+        <div><h5>Find A Store</h5></div>
+        <div><h5>Become A Member</h5></div>
+        <div><h5>Send Us Feedback</h5></div>
+        <div></div>
+        <div></div>
+    </div> <br>
+    <div class="Help">
+        <div><h3>Help</h3></div>
+        <div> <h5>Get Help</h5></div>
+        <div><h5>Order Status</h5></div>
+        <div><h5>Delivery</h5></div>
+        <div><h5>Returns</h5></div>
+        <div><h5>Payment Options</h5></div>
+        <div><h5>Contact Us On Nike.com</h5>
+        <h6>Inquiries</h6></div>
+        <div><h5>Contact Us On All Other</h5>
+        <h6>Inquiries</h6></div>
+    </div> <br>
+    <div class="Company">
+        <div><h3>Company</h3></div>
+        <div><h5>About Nike</h5></div>
+        <div> <h5>News</h5></div>
+        <div><h5>Careers</h5></div>
+        <div><h5>Investors</h5></div>
+        <div><h5>Sustainability</h5></div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Nike, Inc. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+</body>
+</html>

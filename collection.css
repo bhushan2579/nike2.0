@@ -1,0 +1,260 @@
+/* styles.css */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #111;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.collection {
+    padding: 20px;
+}
+
+.collection-category {
+    margin-bottom: 40px;
+}
+
+.collection-category h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.collection-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.collection-items .item {
+    width: calc(33% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.collection-items .item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer{
+    height:auto;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-evenly;
+    border-top:1px solid rgba(0, 0, 0, 0.164) ;
+    margin-top: 20px;
+}
+.Resources{
+    font-size: larger;
+}
+.Resources h3{
+    font-size: 50px;
+}
+.Resources h5{
+    font-size: 20px;
+    color: rgba(77, 77, 77, 0.507);
+    margin-bottom: -30px;
+}
+.Help{
+    font-size: larger;
+}
+.Help h3{
+    font-size: 50px;
+}
+.Help h5{
+    font-size: 20px;
+    color: rgba(77, 77, 77, 0.507);
+    margin-bottom: -10px;
+}
+.Help h6{
+    font-size: 18px;
+    color: rgba(77, 77, 77, 0.507);
+    margin-bottom: 0px;
+}
+.Company{
+    font-size: larger;
+}
+.Company h3{
+    font-size: 50px;
+}
+.Company h5{
+    font-size: 20px;
+    color: rgba(77, 77, 77, 0.507);
+    margin-bottom: -20px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: #f1f1f1;
+}
+.add{
+    display: inline;
+    height: auto;
+    width: auto;
+}
+.vtext h2{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.footer .Resources,
+.footer .Help,
+.footer .Company {
+    flex: 1;
+    width: 100%;
+    margin-left:200px ;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer h5 {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #ff5722;
+}
+
+
+/* Media Queries for Mobile Devices */
+
+/* For devices with a max width of 768px (tablets and below) */
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .collection-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collection-items .item {
+        width: 80%;  /* Make items wider on smaller screens */
+    }
+
+    footer .social-links {
+        flex-direction: column;
+    }
+
+    footer .social-links a {
+        margin-bottom: 10px;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .Resources,
+    .footer .Help,
+    .footer .Company {
+        margin-bottom: 20px;
+    }
+}
+
+/* For devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    header .logo img {
+        max-height: 40px; /* Smaller logo on smaller screens */
+    }
+
+    .collection-category h2 {
+        font-size: 1.5em; /* Smaller headings for mobile */
+    }
+
+    .collection-items .item {
+        width: 100%; 
+    }
+
+    footer {
+        font-size: 14px;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .Resources,
+    .footer .Help,
+    .footer .Company {
+        margin-bottom: 20px;
+    }
+}

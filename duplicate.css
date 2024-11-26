@@ -1,0 +1,244 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Basic Styling */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-part-1 img {
+    height: 40px;
+}
+
+.nav-part-1 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-part-1 ul li {
+    padding: 0 15px;
+}
+
+.nav-part-2 i {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-left {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.content-left h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.content-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    max-width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h4 {
+    margin: 10px 0;
+}
+
+.product .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Trending Section */
+.content2 {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.children {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.children1 {
+    width: 23%;
+    margin: 10px;
+}
+
+.children1 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: #f1f1f1;
+}
+
+.footer .Resources,
+.footer .Help,
+.footer .Company {
+    flex: 1;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer h5 {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 850px) {
+    .nav-part-1 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-part-1 ul li {
+        padding: 10px;
+    }
+
+    .nav-part-2 {
+        display: none; /* Hide icons on mobile */
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .content-right {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .product {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .Resources,
+    .footer .Help,
+    .footer .Company {
+        margin-bottom: 20px;
+    }
+
+    .children {
+        justify-content: center;
+    }
+
+    .children1 {
+        width: 45%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet Support (between 768px and 1024px) */
+/* @media (min-width: px) and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left,
+    .content-right {
+        width: 100%;
+    }
+
+    .children1 {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+} */
