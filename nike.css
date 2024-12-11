@@ -1,0 +1,294 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Basic Styling */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-part-1 img {
+    height: 40px;
+}
+
+.nav-part-1 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-size: 30px;
+}
+
+.nav-part-1 ul li {
+    padding: 0 15px;
+}
+
+.nav-part-2 i {
+    font-size: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.nav-part-2 a{
+    color: #000;
+     text-decoration: none;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-left {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.content-left h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.content-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    max-width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h4 {
+    margin: 10px 0;
+}
+
+.product .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Trending Section */
+.content2 {
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.children {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.children1 {
+    width: 23%;
+    margin: 10px;
+}
+
+.children1 img {
+    overflow: hidden;
+    width: 500px;
+    height: auto;
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    background-color: #f1f1f1;
+}
+.add{
+    display: inline;
+    height: auto;
+    width: auto;
+}
+.vtext h2{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.footer .Resources,
+.footer .Help,
+.footer .Company {
+    flex: 1;
+    width: 100%;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer h5 {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #ff5722;
+}
+/* Responsive Design - Mobile */
+@media (max-width: 800px) {
+    .nav-part-1 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-part-1 ul li {
+        padding: 10px;
+    }
+    
+    .nav-part-2 {
+        display: none; /* Hide icons on mobile */
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .content-left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .content-right {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+     .content2{
+        flex-direction: column;
+        align-items: center;
+     }
+    .product {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .add{
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .Resources,
+    .footer .Help,
+    .footer .Company {
+        margin-bottom: 20px;
+    }
+    .vtext h2{
+        text-align: center;
+    }
+    .children {
+        justify-content: center;
+    }
+
+    .children1 {
+        width: 60%;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet Support (between 768px and 1024px) */
+/* @media (min-width: px) and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left,
+    .content-right {
+        width: 100%;
+    }
+
+    .children1 {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+} */
